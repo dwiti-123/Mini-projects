@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Music Site</title>
+  </head>
+  <body>
+    <div class="container">
+        <!--Header-->
+      <div class="header">
+        <h2>MY MUSIC <i class="fa-solid fa-heart" style="color: #f7020f;"></i> </h2>
+      </div>
+        <!-- Image -->
+      <div class="image">
+        <img class="images"  id="images" src="/images/Chichhore.jpeg" />
+      </div>
+      <!--Song Name-->
+      <div class="names">
+        <div class="sname" id="sname"> <h3>Khairiyat</h3> </div>
+        <div class="artist" id="artist"> <h4>Arjit Sing</h4> </div>
+      </div>
+
+      <audio src="/music-audio/khairiyat.mp3"></audio>
+
+     
+        <!--Shape of controlos-->
+      <div class="shape">
+          
+        <div class="buttons">
+            <i class="fa-solid fa-backward"  style="color:  #f53192;" id="prev" title="Previous"></i>
+            <i class="fa-solid fa-play"  style="color:  #f53192;" id="play" title="Play"></i>
+            <i class="fa-solid fa-forward" style="color:  #f53192;" id="next" title="Next"></i>
+            <i class="fa-solid fa-shuffle fa-xs" style="color:  #f53192;" id="shuffle" title="Shuffle"></i>
+            <i class="fa-solid fa-repeat fa-xs" style="color:  #f53192;" id="repeat" title="Repeat"></i>
+             <!--Progress Bar-->
+               <input type="range" value="0" id="progress">
+              <!--volume-->
+              <i class="fa-solid fa-volume-low fa-xs" style="color:  #f53192;" id="dv" title="Decrese Volume" ></i>
+              <input type="range"  id="vbar" min="1" max="100" value="30" onchange="setVolume()">
+              <i class="fa-solid fa-volume-high fa-xs" style="color:  #f53192;" id="iv" title="Increase Volume"></i>
+      </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="music.js"></script>
+  </html>
